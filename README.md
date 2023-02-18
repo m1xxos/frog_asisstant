@@ -5,7 +5,7 @@
 Проект состоит из 4 частей:
 * [Фронтенд чат-бота](https://github.com/m1xxos/frog_assistant/tree/main/Front)
 * [Бекенд чат-бота](https://github.com/m1xxos/frog_assistant/tree/main/Back)
-* [Телеграмм бот для уведомлений](https://github.com/m1xxos/frog_assistant/tree/main/Bot)
+* [Телеграм бот для уведомлений](https://github.com/m1xxos/frog_assistant/tree/main/Bot)
 * [Распознователь текста пользователя](https://github.com/m1xxos/frog_assistant/tree/main/AI)
 
 # Особенности
@@ -66,9 +66,21 @@ docker run -d -e PORT=3000
 -p 3000:3000 --name back <название> 
 ```
 ***
-## Установка телеграмм бота для уведомлений
+## Установка фронтенда чат-бота
+Перейти в папку Front
 
-Создать бота для телеграмм в https://t.me/BotFather и получить токен
+Запустить сборку контейнера
+```
+docker build -t <название> .
+```
+Запустить контейнер
+```
+docker run -d --name frontus -p 80:8080 <название>
+```
+***
+## Установка телеграм бота для уведомлений
+
+Создать бота для телеграм в https://t.me/BotFather и получить токен
 
 Перейти в папку Bot
 
