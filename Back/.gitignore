@@ -1,3 +1,7 @@
+.eslintrc.js
+
+.prettierrc
+
 # Logs
 logs
 *.log
