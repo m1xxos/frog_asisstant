@@ -52,7 +52,7 @@ def keyword_extractor(text):
 
     keyword_list = process.extract(filtered_text, keywords, scorer=fuzz.partial_ratio)[:3]
     print(keyword_list)
-    keyword_list = list(zip(*keyword_list))[0]
+    keyword_list = [{"keyword": word[0], "score": word[1]} for word in keyword_list]
     return keyword_list
 
 
