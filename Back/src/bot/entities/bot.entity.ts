@@ -4,8 +4,8 @@ import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateCol
 export class Bot {
     @PrimaryColumn({type: 'text'})
     keyword: string;
-    @Column()
+    @Column({nullable: true})
     info: string;
-    @Column("simple-array")
+    @Column("simple-array", {nullable: true})
     additionalInfo: string[];
 }

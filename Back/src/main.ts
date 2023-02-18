@@ -8,7 +8,7 @@ async function bootstrap() {
   const configService: ConfigService = app.get(ConfigService);
 
   const config = new DocumentBuilder()
-  .setTitle('Bot API')
+  .setTitle('Цифровой помощник API')
   .setDescription('помощник важный бумажный')
   .setVersion('1.0')
   .addTag('Bot', 'операции для взаимодействия с электронным помощником')
