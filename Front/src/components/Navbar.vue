@@ -15,12 +15,14 @@
   </svg>
 
 </div>
+
   </section>
 </template>
 
 <script>
 export default {
-  name: "Navbar"
+  name: "Navbar",
+
 }
 </script>
 
@@ -30,5 +32,7 @@ export default {
     min-height: 64px;
     margin: 0 auto;
     padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
   }
 </style>

@@ -10,11 +10,28 @@
       <change afterPath="$PROJECT_DIR$/src/assets/support.svg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/MyProjects.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/Navbar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/SectionButtonsMain.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/UI/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/main-container/ContainerForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/main-container/ContainerHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/main-container/MainButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/main-container/Selector.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/sidebar/SectionButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/sidebar/Sidebar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/sidebar/SidebarHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/sidebar/SidebarProject.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/UserCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/chat/ChatModule.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/FormCreateProject.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/UI/FormInput.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/UI/FormTextSeparator.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Agreements.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/views/CreateProject.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Events.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/views/MainView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/MiddleContainer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Participants.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/ProjectsArchive.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Reports.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
@@ -72,6 +89,7 @@
       <recent name="D:\WS\frog_assistant\src\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WS\frog_assistant\src\components\UI\sidebar" />
       <recent name="D:\WS\frog_assistant\src\components\UI" />
     </key>
   </component>
@@ -83,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676655665772</updated>
-      <workItem from="1676655667072" duration="13214000" />
+      <workItem from="1676655667072" duration="26829000" />
     </task>
     <servers />
   </component>

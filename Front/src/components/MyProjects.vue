@@ -1,32 +1,32 @@
 <template>
-  <div class="container__projects" v-if="show">
-    <div class="header">
-      <p>Мои проекты</p>
-    </div>
-    <div class="selectors">
-      <select name="region" id="select_region">
-        <option>Регион</option>
-      </select>
-      <select name="type" id="select_type" >
-        <option>Тип проекта</option>
-      </select>
-      <select name="reference" id="select_reference" >
-        <option>Шаблон проекта</option>
-      </select>
-      <input type="text" placeholder="Поиск">
-    </div>
-    <div class="list">
-      <p>
-        Ничего не найдено
-      </p>
-      <button @click="$router.push(`/createproject`)">Добавить проект </button>
+  <div class="container">
+    <sidebar/>
+    <div class="middle">
+      <middle-container>
+        <container-header name="Мои проекты">
+          <div class="selectors">
+            <selector name="Регион"/>
+            <selector name="Тип проекта"/>
+            <selector name="Шаблон проекта"/>
+            <input type="text">
+          </div>
+        </container-header>
+
+        <main-button @click="$router.push(`/createproject`)" text="ДОБАВИТЬ ПРОЕКТ"/>
+      </middle-container>
     </div>
   </div>
 </template>
 
 <script>
+import ContainerHeader from "@/components/UI/main-container/ContainerHeader";
+import Selector from "@/components/UI/main-container/Selector";
+import MiddleContainer from "@/views/MiddleContainer";
+import Sidebar from "@/components/UI/sidebar/Sidebar";
+import MainButton from "@/components/UI/main-container/MainButton";
 export default {
   name: "MyProjects",
+  components: {MainButton, MiddleContainer, Selector, ContainerHeader, Sidebar},
   props: {
     show: {
       type: Boolean,
@@ -37,33 +37,21 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .header{
-      height: 70px;
-      background-color: white;
-      display: flex;
-      gap: 10px;
-      padding: 12px 0;
-      justify-content: left;
-      p {
-        background-color: white;
-        font-size: 30px;
-        font-weight: bold;
-        margin: auto 0;
-      }
-  }
-  .selectors{
-    background-color: white;
-    display: flex;
-    gap: 8px;
-    select{
-      font-size: 13px;
-      padding: 8px;
-      background-color: white;
-      border: 1px solid #acb5bd;
-      border-radius: 6px;
-      option{
-        color: black;
-      }
-    }
-  }
+.container{
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  margin: 0 48px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.25);
+}
+.middle{
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+.selectors{
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+}
+middle-container{
+  grid-column: 2;
+}
 </style>

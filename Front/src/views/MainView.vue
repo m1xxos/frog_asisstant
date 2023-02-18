@@ -1,33 +1,20 @@
 <template>
   <div class="container">
-    <div class="sections">
-      <div class="menu">
-        <div>Пользователь</div>
-        <section-buttons-main name="МЕРОПРИЯТИЯ" @click="projectsVisible=false"/>
-        <section-buttons-main name="МОИ ПРОЕКТЫ" @click="projectsVisible=true"/>
-        <section-buttons-main name="АРХИВ ПРОЕКТОВ" @click="projectsVisible=false"/>
-        <section-buttons-main name="МОИ ЗАЯВКИ" @click="projectsVisible=false"/>
-        <section-buttons-main name="ГРАНТОВЫЕ СОГЛАШЕНИЯ" @click="projectsVisible=false"/>
-        <section-buttons-main name="ОТЧЁТЫ" @click="projectsVisible=false"/>
-      </div>
-    </div>
-    <div class="middle">
-      <my-projects v-model:show="projectsVisible"/>
-      <p v-if="!projectsVisible">Контактные данные региональных органов исполнительной власти, реализующих молодежную политику</p>
-    </div>
-    <div class="chat">
-      чат
-    </div>
+<sidebar/>
+    <middle-container>
+        <container-header name="Контактные данные региональных органов исполнительной власти, реализующих молодежную политику"/>
+    </middle-container>
   </div>
 
 </template>
 
 <script>
-import SectionButtonsMain from "@/components/UI/SectionButtonsMain";
+import SectionButtonsMain from "@/components/UI/sidebar/SectionButton";
 import MyProjects from "@/components/MyProjects";
+import Sidebar from "@/components/UI/sidebar/Sidebar";
 export default {
   name: "MainView.vue",
-  components: {SectionButtonsMain, MyProjects},
+  components: {SectionButtonsMain, MyProjects, Sidebar},
   data() {
     return {
       projectsVisible: false,
