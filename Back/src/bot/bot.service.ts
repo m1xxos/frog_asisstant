@@ -3,7 +3,9 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Bot } from './entities/bot.entity';
 import axios from 'axios'
+import { ApiTags } from '@nestjs/swagger';
 @Injectable()
+@ApiTags('Bot')
 export class BotService {
   constructor(
     @InjectRepository(Bot)
@@ -23,6 +25,9 @@ export class BotService {
       else if (IIres.data[0].score < 50){
         resMes.text = "К сожалению, не очень понятно, что вы имели ввиду, " +
         "пользователь. Может это???"
+        IIres.data.forEach(element => {
+          resMes.data.push(element.keyword)
+        });
       }
       else {
         resMes.text = "Вероятнее всего, вы имели ввиду чето типа этого, " +
