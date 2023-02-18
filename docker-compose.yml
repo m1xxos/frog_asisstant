@@ -1,0 +1,58 @@
+version: '3.7'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: EXAMPLE 
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - 5432:5432
+    volumes:
+      - /custom/mount:/var/lib/postgresql/data
+  
+  back:
+    build:
+      context: ./Back
+      dockerfile: Dockerfile
+    restart: always
+    environment: 
+      PORT: 3000 
+      DATABASE_TYPE: EXAMPLE 
+      DATABASE_HOST: EXAMPLE
+      DATABASE_PORT: EXAMPLE 
+      DATABASE_USERNAME: EXAMPLE 
+      DATABASE_PASSWORD: EXAMPLE 
+      DATABASE_NAME: EXAMPLE
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
+  
+  front:
+    build:
+      context: ./Front
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 80:8080
+
+  tgbot:
+    build:
+      context: ./Bot
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      TOKEN: EXAMPLE
+    ports:
+      - 8083:8083
+  
+  keywords:
+    build:
+      context: ./AI
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 33321:33321
