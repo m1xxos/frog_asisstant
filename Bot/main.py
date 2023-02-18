@@ -2,8 +2,14 @@ import telebot
 from telebot import types
 from notifiers import get_notifier
 import time
-from data import TOKEN, ChatID
+import os
+from dotenv import load_dotenv, find_dotenv
 
+
+load_dotenv(find_dotenv())
+
+TOKEN = os.getenv('TOKEN')
+ChatID = os.getenv('ChatID')
 
 bot = telebot.TeleBot(TOKEN)
 # k = 0
