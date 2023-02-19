@@ -8,7 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'main',
-    component: MainView
+    redirect: '/projects'
   },
   {
     path: '/createproject',

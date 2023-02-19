@@ -28,10 +28,10 @@ export default {
 
 <style scoped>
   .navbar{
-    width: 1824px;
+    width: 100%;
     min-height: 64px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 35px;
     display: flex;
     justify-content: space-between;
   }

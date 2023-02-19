@@ -14,6 +14,7 @@ export default {
 
 <style scoped>
 input{
+  height: 45px;
   padding: 10px 20px;
   background-color: white;
   border: 1px solid #a1a9b0;

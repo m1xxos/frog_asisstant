@@ -13,12 +13,14 @@ export default {
 
 <style scoped>
 button{
+  height: 45px;
   background-color: #faa419;
-  padding: 15px;
+  padding: 10px;
   border: none;
   border-radius: 4px;
   color: white;
   font-weight: bold;
   font-size: 12px;
+  margin: auto 8px;
 }
 </style>

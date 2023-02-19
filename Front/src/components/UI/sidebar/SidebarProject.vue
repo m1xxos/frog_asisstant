@@ -1,31 +1,31 @@
 <template>
   <div class="sections">
-  <section-buttons-main name="ОБЩЕЕ" :active=active @click="setActiveGeneral"/>
-  <section-buttons-main name="О ПРОЕКТЕ"/>
-  <section-buttons-main name="КОМАНДА"/>
-  <section-buttons-main name="РЕЗУЛЬТАТЫ"/>
-  <section-buttons-main name="КАЛЕНДАРНЫЙ ПЛАН"/>
-  <section-buttons-main name="МЕДИА"/>
-  <section-buttons-main name="СОФИНАНСИРОВАНИЕ"/>
-  <section-buttons-main name="ДОП. ФАЙЛЫ"/>
-  <section-buttons-main name="РАСХОДЫ"/>
+    <sidebar-header name="Разделы"/>
+  <section-buttons-main hidden name="ОБЩЕЕ" :active=active />
+  <section-buttons-main hidden name="О ПРОЕКТЕ"/>
+  <section-buttons-main hidden name="КОМАНДА"/>
+  <section-buttons-main hidden name="РЕЗУЛЬТАТЫ"/>
+  <section-buttons-main hidden name="КАЛЕНДАРНЫЙ ПЛАН"/>
+  <section-buttons-main hidden name="МЕДИА"/>
+  <section-buttons-main hidden name="СОФИНАНСИРОВАНИЕ"/>
+  <section-buttons-main hidden name="ДОП. ФАЙЛЫ"/>
+  <section-buttons-main hidden name="РАСХОДЫ"/>
   </div>
 </template>
 
 <script>
 export default {
   name: "SidebarProject",
+  components: {},
+
   data(){
     return{
-      active: String,
+      active: '#faa419',
+      textColorActive: '#ffffff',
       isActive: Boolean
     }
   },
   methods: {
-    setActiveGeneral(){
-        this.active = '#faa419';
-      console.log(event.target)
-    }
   }
 }
 </script>

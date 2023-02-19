@@ -1,18 +1,17 @@
 <template>
   <div class="container">
     <div>
-      <div>
-        Разделы
-      </div>
       <sidebar-project/>
     </div>
-    <div class="middle">
-      <container-header name="Новый проект">
-      </container-header>
-      <div class="form">
-        <form-create-project/>
+    <middle-container>
+      <div class="middle">
+        <container-header name="Новый проект">
+        </container-header>
+        <div class="form">
+          <form-create-project/>
+        </div>
       </div>
-    </div>
+    </middle-container>
   </div>
 </template>
 
@@ -20,14 +19,16 @@
 import ContainerHeader from "@/components/UI/main-container/ContainerHeader";
 import SidebarProject from "@/components/UI/sidebar/SidebarProject";
 import FormCreateProject from "@/components/form/FormCreateProject";
+import MiddleContainer from "@/views/MiddleContainer";
 export default {
   name: "CreateProject",
-  components: {SidebarProject, ContainerHeader, FormCreateProject},
+  components: {SidebarProject, ContainerHeader, FormCreateProject, MiddleContainer},
 }
 </script>
 
 <style scoped lang="scss">
 .container{
+
   display: grid;
   grid-template-columns: 256px 1fr;
   margin: 0 48px;

@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92713370-ed28-49dd-8529-1d995e058592" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/img.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/assets/logo_text.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/micro.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/send.svg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/assets/support.svg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/MyProjects.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/Navbar.vue" afterDir="false" />
@@ -21,6 +24,10 @@
       <change afterPath="$PROJECT_DIR$/src/components/UI/sidebar/SidebarProject.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/UserCard.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/chat/ChatModule.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/chat/UI/ChatBottom.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/chat/UI/ChatKeywords.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/chat/UI/Message.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/chat/UI/MessageBox.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/form/FormCreateProject.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/form/UI/FormInput.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/form/UI/FormTextSeparator.vue" afterDir="false" />
@@ -36,8 +43,10 @@
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/AboutView.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/HomeView.vue" beforeDir="false" />
     </list>
@@ -101,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676655665772</updated>
-      <workItem from="1676655667072" duration="26829000" />
+      <workItem from="1676655667072" duration="57563000" />
     </task>
     <servers />
   </component>
