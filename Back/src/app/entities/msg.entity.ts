@@ -5,11 +5,11 @@ export class Msg {
     @PrimaryGeneratedColumn()
     id: number;
     
-    @Column()
-    userId: number;
+    @Column({type: "uuid"})
+    userId: string;
 
-    @Column()
-    receiverId: number;
+    @Column({type: "uuid"})
+    receiverId: string;
     
     @Column()
     text: string;

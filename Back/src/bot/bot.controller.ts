@@ -8,6 +8,11 @@ import { KeywordDto } from './dto/keyword.dto';
 export class BotController {
   constructor(private readonly botService: BotService) {}
 
+  @Get('setWS')
+  setWS() {
+    return this.botService.setWS();
+  }
+
   @Post('keyword')
   findInfoByKeyword(@Body() keywordDto: KeywordDto) {
     return this.botService.findInfoByKeyword(keywordDto.keyword);

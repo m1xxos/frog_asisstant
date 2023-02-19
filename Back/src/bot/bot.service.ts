@@ -3,12 +3,18 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Bot } from './entities/bot.entity';
 import axios from 'axios'
+import { v4 as uuidv4 } from 'uuid';
 @Injectable()
 export class BotService {
   constructor(
     @InjectRepository(Bot)
     private botRepository: Repository<Bot>
   ) {}
+
+    async setWS() {
+      const uuid = await uuidv4()
+      return {id: uuid, receiverId: 'ac4950aa-70e3-4d4f-9387-79533de6cfda'}
+    }
 
   async findInfoByKeyword(keyword: string) {
     let resMes = {text: '', data: []};
