@@ -3,7 +3,7 @@
   <div v-for="keyword in listKeys">
   <button @click="sendMessage(keyword)">{{keyword}}</button>
   </div>
-  <button @click="click">Click</button>
+<!--  <button @click="click">Click</button>-->
 </div>
 </template>
 
